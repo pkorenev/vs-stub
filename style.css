@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: Montserrat;
+}
+p, h1, h2, h3, a {
+    color: #ffffff;
+    margin: 0;
+    font-family: Montserrat;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    background-image: url("img/bg.png");
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+header{
+    padding: 70px 50px;
+}
+.content{
+    padding: 85px 255px;
+    max-width: 1024px;
+}
+.subtitle{
+    color: #00ADEE;
+    font-size: 32px;
+}
+.title{
+    font-size: 100px;
+}
+.button-block-title{
+    margin-top: 55px;
+    font-size: 24px;
+    color: #C0C1C4;
+}
+.button-block{
+    display: flex;
+    justify-content: left;
+    padding-top: 33px;
+}
+.button{
+    width: 265px;
+    height: 65px;
+    font-size: 25px;
+    margin-right: 45px;
+    text-align: center;
+    position: relative;
+}
+.button a{
+    background-color: #244556;
+    z-index: 4;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+}
+.blue{
+    background-color: #00ADEE;
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    transition: 0.4s ease-out;
+}
+.red{
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background-color: #EC0874;
+    transition: 0.4s ease-out;
+}
+.contact-block{
+    margin-top: 145px;
+}
+.contact-block img{
+    width: 24px;
+    height: 24px;
+    padding-right: 15px;
+}
+.contact-block li{
+    font-size: 24px;
+    margin-top: 9px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+@media screen and (min-width: 1024px){
+    .button:hover .blue{
+        left: -5px;
+        top: -5px;
+        right: 0;
+        bottom: 0;
+    }
+    .button:hover .red{
+        right: -5px;
+        bottom: -5px;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    header{
+        padding: 50px 50px 0 50px;
+    }
+    .content{
+        padding: 85px 135px;
+    }
+    .subtitle{
+        font-size: 32px;
+    }
+    .title{
+        font-size: 80px;
+    }
+    .button-block-title{
+        margin-top: 55px;
+        font-size: 24px;
+    }
+
+}
+@media screen and (max-width: 1280px){
+    .wrapper{
+        background-image: url("img/bg.png");
+        background-size: cover;
+        background-position: top;
+    }
+    header{
+        padding: 40px 40px 0 40px;
+    }
+    .content{
+        padding: 85px 125px 45px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 48px;
+    }
+    .button-block-title{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+    .button-block{
+        padding-top: 10px;
+    }
+    .button{
+        width: 265px;
+        height: 56px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .contact-block{
+        margin-top: 85px;
+    }
+    .contact-block img{
+        width: 16px;
+        height: 16px;
+        padding-right: 10px;
+    }
+    .contact-block li{
+        font-size: 16px;
+        margin-top: 6px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        background-image: url("img/bg.png");
+        background-size: cover;
+        background-position: top;
+    }
+    header{
+        padding: 30px;
+    }
+    .logo img{
+        width: 106px;
+        height: 40px;
+    }
+    .content{
+        padding: 75px 30px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 38px;
+    }
+    .button-block-title{
+        margin-top: 65px;
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 540px){
+    header{
+        padding: 30px 30px 0 30px;
+    }
+    .wrapper{
+        background-position: left;
+    }
+    .content{
+        padding: 75px 30px 30px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .button-block{
+        padding-top: 10px;
+        display: block;
+    }
+    .button{
+        width: 100%;
+        height: 56px;
+        font-size: 18px;
+        margin: 25px 0;
+    }
+    .contact-block{
+        margin-top: 85px;
+    }
+    .contact-block img{
+        width: 16px;
+        height: 16px;
+        padding-right: 10px;
+    }
+    .contact-block li{
+        font-size: 16px;
+        margin-top: 6px;
+        display: flex;
+        align-items: flex-end;
+    }
+}
